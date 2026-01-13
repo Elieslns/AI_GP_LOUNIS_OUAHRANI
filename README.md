@@ -79,6 +79,11 @@ Voici une description rapide des fichiers clés pour vous repérer dans le code 
 - **`main.c`** : Point d'entrée du programme. Gère la boucle de jeu, la communication avec l'Arbitre (via `stdin`/`stdout`) et la gestion du temps (timer).
 - **`ai_advanced.c`** : Cœur de l'intelligence artificielle. Contient l'algorithme Negamax, Alpha-Beta, toutes les optimisations (Zobrist, NMP, LMR) et la fonction d'évaluation.
 - **`ai.c`** : Fonctions utilitaires de base (génération des clés de Zobrist, structure des coups, helpers).
+- **`game.c`** : Gestion globale de l'état du jeu (initialisation, vérification de fin de partie, score).
+- **`board.c`** : Gestion de la structure du plateau (binaire/tableau) et affichage debug.
+- **`move.c`** : Génération des coups légaux et application basique des mouvements.
+- **`sow_and_capture.c`** : Implémentation précise des règles de distribution (graines colorées, priorités) et de capture.
+- **`ai_interface.h`** : Définition de l'interface standardisée pour connecter l'IA au moteur de jeu.
 - **`bot_lounis_ouahrani.exe`** : L'exécutable final du bot (compilé pour Windows).
 - **`Arbitre.java`** : Programme Java (fourni) qui sert d'interface graphique et de maître du jeu pour faire jouer les bots.
 

@@ -17,7 +17,7 @@ Le bot communique via l'entrée/sortie standard et nécessite l'arbitre Java pou
 2. **Lancer le match** (Bot vs Bot) :
    ```bash
    # Syntaxe : java Arbitre <Joueur1> <Joueur2>
-   java Arbitre
+   java Arbitre <Joueur1> <Joueur2>
    ```
 
    > **Note :** Vous pouvez remplacer l'un des bots par un autre programme.
@@ -79,7 +79,8 @@ Voici une description rapide des fichiers clés pour vous repérer dans le code 
 - **`main.c`** : Point d'entrée du programme. Gère la boucle de jeu, la communication avec l'Arbitre (via `stdin`/`stdout`) et la gestion du temps (timer).
 - **`ai_advanced.c`** : Cœur de l'intelligence artificielle. Contient l'algorithme Negamax, Alpha-Beta, toutes les optimisations (Zobrist, NMP, LMR) et la fonction d'évaluation.
 - **`ai.c`** : Fonctions utilitaires de base (génération des clés de Zobrist, structure des coups, helpers).
-- **`awale_game_macros.h`** : Fichier d'en-tête principal définissant les constantes du jeu (taille plateau, types de graines, scores).
+- **`awale_game_macros.h`** : (Supprimé / Intégré dans game.h)
+- **`bot_lounis_ouahrani.exe`** : L'exécutable final du bot (compilé pour Windows).
 - **`Arbitre.java`** : Programme Java (fourni) qui sert d'interface graphique et de maître du jeu pour faire jouer les bots.
 
 ---

@@ -69,20 +69,20 @@ Notre bot utilise des algorithmes avancés pour optimiser ses décisions en moin
    - Sécurité (éviter de laisser des trous à 1 ou 2 graines).
    - Famine (pénaliser les positions où l'on a trop peu de graines).
 
-71: 
-72: ---
-73: 
-74: ## Structure des Fichiers
-75: 
-76: Voici une description rapide des fichiers clés pour vous repérer dans le code :
-77: 
-78: - **`main.c`** : Point d'entrée du programme. Gère la boucle de jeu, la communication avec l'Arbitre (via `stdin`/`stdout`) et la gestion du temps (timer).
-79: - **`ai_advanced.c`** : Cœur de l'intelligence artificielle. Contient l'algorithme Negamax, Alpha-Beta, toutes les optimisations (Zobrist, NMP, LMR) et la fonction d'évaluation.
-80: - **`ai.c`** : Fonctions utilitaires de base (génération des clés de Zobrist, structure des coups, helpers).
-81: - **`awale_game_macros.h`** : Fichier d'en-tête principal définissant les constantes du jeu (taille plateau, types de graines, scores).
-82: - **`Arbitre.java`** : Programme Java (fourni) qui sert d'interface graphique et de maître du jeu pour faire jouer les bots.
-83: 
-84: ---
+
+---
+
+## Structure des Fichiers
+
+Voici une description rapide des fichiers clés pour vous repérer dans le code :
+
+- **`main.c`** : Point d'entrée du programme. Gère la boucle de jeu, la communication avec l'Arbitre (via `stdin`/`stdout`) et la gestion du temps (timer).
+- **`ai_advanced.c`** : Cœur de l'intelligence artificielle. Contient l'algorithme Negamax, Alpha-Beta, toutes les optimisations (Zobrist, NMP, LMR) et la fonction d'évaluation.
+- **`ai.c`** : Fonctions utilitaires de base (génération des clés de Zobrist, structure des coups, helpers).
+- **`awale_game_macros.h`** : Fichier d'en-tête principal définissant les constantes du jeu (taille plateau, types de graines, scores).
+- **`Arbitre.java`** : Programme Java (fourni) qui sert d'interface graphique et de maître du jeu pour faire jouer les bots.
+
+---
 
 ## Développement (Compilation)
 

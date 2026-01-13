@@ -6,7 +6,7 @@ public class Arbitre {
 
     public static void main(String[] args) throws Exception {
         // Chemins des exécutables des joueurs
-        String commandA = args.length > 0 ? args[0] : ".\\bot.exe";
+        String commandA = args.length > 0 ? args[0] : ".\\bot_lounis_ouahrani.exe";
         String commandB = args.length > 1 ? args[1] : ".\\bot_lounis_ouahrani.exe";
 
         System.out.println("Lancement de la partie:");
